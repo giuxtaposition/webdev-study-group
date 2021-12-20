@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+:root {
+    --background-color: #383a59;
+    --text-color: #525252;
+    --brand-color: #bd93f9;
+}
+
+html {
+    height: 100%;
+    text-rendering: optimizelegibility;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+    box-sizing: border-box;
+    min-height: 100%;
+    line-height: 1.5;
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    font-feature-settings: 'kern';
+    background-color: var(--background-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: var(--text-color);
+}
+
+header h1 {
+    color: whitesmoke;
+}
+
+main ul {
+    width: 100%;
+    top: 120%;
+    left: 0px;
+    padding: 10px 18px;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.15);
+    border-radius: 3px;
+    background: #282a36;
+}
+
+main li {
+    margin: 5px 0px 5px 0px;
+    float: none;
+    display: block;
+    list-style: none;
+    font-size: 17px;
+    line-height: 1.65em;
+}
+
+main a {
+    text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.5);
+    text-decoration: none;
+    transition: color linear 0.15s;
+    color: var(--text-color);
+}
+
+main a:hover {
+    color: var(--brand-color);
+}
