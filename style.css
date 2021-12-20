@@ -28,7 +28,7 @@ body {
 }
 
 header h1 {
-    color: whitesmoke;
+    color: var(--brand-color);
 }
 
 main ul {
