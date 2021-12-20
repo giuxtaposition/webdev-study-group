@@ -1,0 +1,50 @@
+html {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    position: relative;
+}
+
+h1 {
+    text-align: center;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    border: 2px dashed darkcyan;
+}
+
+.grid {
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    border: 2px dashed darkcyan;
+}
+
+.position {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    border: 2px dashed darkcyan;
+}
+
+.position .item {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.item {
+    width: 20rem;
+    height: 20rem;
+    border: 1px solid cadetblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

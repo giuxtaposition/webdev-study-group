@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./style.css" rel="stylesheet" />
+</head>
+
+<body>
+    <section>
+
+
+        <form>
+            <h1>Account Settings</h1>
+            <hr class='divider' />
+            <section>
+                <div class='section-title'>
+                    <h2>Personal Info</h2>
+                </div>
+                <div class='section-form'>
+                    <div role="group" class="form-item">
+                        <label id="name-label" for="name">Name</label>
+                        <input type="text" maxlength="255" id="name">
+                    </div>
+                    <div role="group" class="form-item">
+                        <label id="email-label" for="email">Email</label>
+                        <input type="text" maxlength="255" id="email">
+                    </div>
+                    <div role="group" class="form-item"><label id="bio-label" for="bio">Bio</label>
+                        <textarea rows="5" id="bio" aria-describedby="bio-helptext"></textarea>
+                        <div id="bio-helptext">Brief description for your profile. URLs are hyperlinked.</div>
+                    </div>
+                </div>
+            </section>
+            <hr class='divider' />
+            <section>
+                <div class='section-title'>
+                    <h2>Profile Photo</h2>
+                </div>
+                <div class="section-form profile-photo">
+                    <span class="profile-photo-image">
+                        <img src='assets/avatar.png' alt='profile photo' />
+                    </span>
+                    <div class="profile-photo-buttons-section">
+                        <div class="profile-photo-buttons">
+                            <button type="button" class="change-photo-button">
+                                <span>
+                                    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 20 20"
+                                        aria-hidden="true" focusable="false" height="1em" width="1em"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M5.5 13a3.5 3.5 0 01-.369-6.98 4 4 0 117.753-1.977A4.5 4.5 0 1113.5 13H11V9.413l1.293 1.293a1 1 0 001.414-1.414l-3-3a1 1 0 00-1.414 0l-3 3a1 1 0 001.414 1.414L9 9.414V13H5.5z">
+                                        </path>
+                                        <path d="M9 13h2v5a1 1 0 11-2 0v-5z"></path>
+                                    </svg>
+                                </span>Change photo</button>
+                            <button type="button" class="delete-photo-button">Delete</button>
+                        </div>
+                        <p>.jpg, .gif, or .png. Max file size 700K.</p>
+                    </div>
+                </div>
+            </section>
+            <hr class='divider' />
+            <section>
+                <div class='section-title'>
+                    <h2>Language</h2>
+                </div>
+                <div class="section-form">
+                    <div role="group" class="form-item"><label id="language-label" for="language">Display
+                            Language</label>
+                        <div class="select-wrapper">
+                            <select id="language">
+                                <option>English</option>
+                                <option>Italian</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div role="group" class="form-item">
+                        <label id="currency-label" for="currency">Display
+                            currency</label>
+                        <div class="select-wrapper">
+                            <select id="currency">
+                                <option>USD ($)</option>
+                                <option>EUR (€)</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <hr class='divider' />
+            <section>
+                <div class='section-title'>
+                    <h2>Notifications</h2>
+                </div>
+                <div class='section-form checkbox'>
+                    <div role="group" class='form-item checkbox'>
+                        <input type="checkbox" name="account-notification" value="account-notification">
+                        <label for="account-notification">Get notifications about your account activities</label>
+                    </div>
+                    <div role="group" class='form-item checkbox'>
+                        <input type="checkbox" name="mentions-notification" value="mentions-notification">
+                        <label for="mentions-notification">Get notifications about mentions</label>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div class="form-buttons"><button type="submit">Save Changes</button><button
+                        type="button">Cancel</button></div>
+            </section>
+        </form>
+    </section>
+
+</body>
+
+</html>
