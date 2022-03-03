@@ -1,0 +1,22 @@
+[
+    {
+        "description": "Today I Learned",
+        "url": "./today-i-learned/index.html"
+    },
+    {
+        "description": "Center A Div",
+        "url": "./center-div/index.html"
+    },
+    {
+        "description": "Form",
+        "url": "./form/index.html"
+    },
+    {
+        "description": "Menu of the Day",
+        "url": "./menu-of-the-day/index.html"
+    },
+    {
+        "description": "Todo App",
+        "url": "https://giuxtaposition.github.io/todo-app/"
+    }
+]
